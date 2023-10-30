@@ -1,0 +1,160 @@
+{
+  "products": [
+    {
+      "image": "https://n11scdn.akamaized.net/a1/226_226/14/40/66/99/IMG-9090445001024614508.jpg",
+      "routeUrl": "1",
+      "title": "Şarjlı Nostaljik Radyo Meieraaaaa",
+      "price": "800",
+      "rate": 3.5,
+      "id": 1,
+      "order": 2
+    },
+    {
+      "image": "https://n11scdn.akamaized.net/a1/226_226/06/14/16/54/10898711.jpg",
+      "routeUrl": "1",
+      "title": "Şarjlı Nostaljik Radyo Meier",
+      "price": 80,
+      "rate": 5,
+      "id": 2,
+      "order": 0
+    },
+    {
+      "image": "https://n11scdn.akamaized.net/a1/226_226/06/96/13/10/IMG-1486102379293473233.jpg",
+      "routeUrl": "1",
+      "title": "Tois Mitur 3 Tekerlekli Scooter",
+      "price": 50,
+      "rate": 5,
+      "id": 3,
+      "order": 3
+    },
+    {
+      "image": "https://n11scdn.akamaized.net/a1/226_226/11/43/76/61/IMG-6454831831079238194.jpg",
+      "routeUrl": "1",
+      "title": "Pure IQ Grafik Dijital Çocuk Yazı Çizim Tableti LCD 8.5",
+      "price": 60,
+      "rate": 5,
+      "id": 4,
+      "order": 5
+    },
+    {
+      "image": "https://n11scdn.akamaized.net/a1/226_226/10/72/84/88/IMG-4917808942184959824.jpg",
+      "routeUrl": "1",
+      "title": "Royjones Terlik Modelleri Unisex Anatomik Günlük Terlik 7001",
+      "price": 123,
+      "rate": 5,
+      "id": 5,
+      "order": 6
+    },
+    {
+      "image": "https://productimages.hepsiburada.net/s/411/200-200/110000440701673.jpg",
+      "routeUrl": "1",
+      "title": "Test Ürün 2",
+      "price": 450,
+      "rate": 5,
+      "id": 6,
+      "order": 7
+    },
+    {
+      "image": "https://productimages.hepsiburada.net/s/160/200-200/110000118727098.jpg",
+      "routeUrl": "1",
+      "title": "Test Ürün 3",
+      "price": 450,
+      "rate": 5,
+      "id": 7,
+      "order": 4
+    },
+    {
+      "image": "https://productimages.hepsiburada.net/s/274/200-200/110000260569005.jpg",
+      "routeUrl": "1",
+      "title": "Test Ürün 4",
+      "price": 450,
+      "rate": 5,
+      "id": 8,
+      "order": 8
+    },
+    {
+      "image": "https://productimages.hepsiburada.net/s/411/200-200/110000440701673.jpg",
+      "routeUrl": "1",
+      "title": "Test Ürün 5",
+      "price": 450,
+      "rate": 5,
+      "id": 9,
+      "order": 1
+    }
+  ],
+  "users": [
+    {
+      "name": "admin",
+      "surname": "admin",
+      "username": "admin",
+      "birthDate": "",
+      "password": "admin",
+      "id": "f49b64db-0f1c-45d0-9476-9b9d1a0b539d",
+      "role": "ADMIN",
+      "basket": [],
+      "addresses": [
+        {
+          "title": "Ev",
+          "address": "Şeyhli Mahallesi Mis Sokak no: 13 D:20 Pendik/İstanbul"
+        },
+        {
+          "title": "debeme",
+          "address": "deneme"
+        },
+        {
+          "title": "aaa",
+          "address": "aaa"
+        }
+      ],
+      "cards": [
+        {
+          "cardName": "QNB Kartım",
+          "cardNumber": "5555 5555 5555 5555",
+          "cardOwner": "Faruk Çakır",
+          "cardCVV": "775",
+          "cardExpireDate": "04/28"
+        },
+        {
+          "cardName": "Test Kart",
+          "cardNumber": "5555 5555 5555 5555",
+          "cardOwner": "Faruk Çakır",
+          "cardCVV": "456",
+          "cardExpireDate": "11/28"
+        }
+      ]
+    },
+    {
+      "name": "test",
+      "surname": "test",
+      "username": "test@test.com",
+      "birthDate": "1999-03-11T18:12:56.391Z",
+      "password": "test",
+      "id": "4820f230-a1a3-47ae-8ca8-ead11cb98069",
+      "role": "USER"
+    },
+    {
+      "name": "asdasd",
+      "surname": "adsasd",
+      "username": "farukckr55@gmail.com",
+      "password": "88753981Sml",
+      "birthDate": "2023-10-10T01:01:55.417Z",
+      "id": "160tKX3"
+    },
+    {
+      "name": "asdas",
+      "surname": "asdasd",
+      "username": "farukckr55@gmail.com",
+      "password": "88753981Sml",
+      "birthDate": "2023-10-10T01:06:20.515Z",
+      "id": "jeG9G7j"
+    },
+    {
+      "name": "asda",
+      "surname": "asdasd",
+      "username": "farukckr55@gmail.com",
+      "password": "88753981Sml",
+      "birthDate": "2023-10-11T01:29:07.693Z",
+      "id": "IGSTYWZ"
+    }
+  ]
+}

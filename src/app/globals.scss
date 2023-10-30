@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ant-select {
+  @apply h-full;
+  .ant-select-selector {
+    @apply h-full flex items-center rounded-2xl #{!important};
+    input {
+      @apply h-full text-lg  border-red-500 #{!important};
+    }
+  }
+
+  .ant-select-selection-placeholder {
+    @apply text-lg #{!important};
+  }
+}
