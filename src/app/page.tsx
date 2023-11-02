@@ -3,26 +3,27 @@ import { useGetProductsQuery } from "@/services/productApi";
 import Slider from "./components/Slider";
 import { IProductCardItem } from "@/types/components/ProductCard";
 import ItemCard from "./components/ItemCard";
-import { useEffect } from "react";
-import TokenService from "@/utils/TokenService";
-import { useGetUserByIdMutation, useNewUserMutation } from "@/services/authApi";
+import { useSelector } from "react-redux";
+import { RootState } from "@/store";
 import { useDispatch } from "react-redux";
-import { login } from "@/store/features/auth/authSlice";
+import {
+  addItemToBasket,
+  increaseItemAmount,
+} from "@/store/features/basket/basketSlice";
 
 export default function Home() {
   const { data } = useGetProductsQuery([]);
-  const [getUserById] = useGetUserByIdMutation({});
+  const basket = useSelector((state: RootState) => state.auth.basket);
   const dispatch = useDispatch();
-  const saveSession = async () => {
-    const session = TokenService.getToken();
-    if (session) {
-      const response = await getUserById(session).unwrap();
-      dispatch(login(response));
+  const addItem = async (item: any) => {
+    const checkItem = basket.find((basketItem) => basketItem.id === item.id);
+    if (checkItem) {
+      console.log("asfsdf");
+      dispatch(increaseItemAmount(item));
+    } else {
+      dispatch(addItemToBasket([...basket, item]));
     }
   };
-  useEffect(() => {
-    saveSession();
-  }, []);
   return (
     <main className="py-10">
       <div className="best-sellers bg-blue-100">
@@ -35,7 +36,7 @@ export default function Home() {
         <h2 className="text-2xl font-semibold">Ürünler</h2>
         <div className="products gap-5 grid grid-cols-4">
           {data?.map((item: IProductCardItem) => (
-            <ItemCard key={item.id} item={item} />
+            <ItemCard key={item.id} item={item} addItemToBasket={addItem} />
           ))}
         </div>
         {/* <a-pagination

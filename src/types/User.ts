@@ -8,5 +8,5 @@ export interface IUser {
     password: string,
     birthDate: string | Date,
     role: 'ADMIN' | 'USER',
-    basket: Array<IProductBasket>
+    basket: Array<IProductBasket> | []
 }

@@ -2,7 +2,6 @@
 import { IUser } from "@/types/User";
 import { LockOutlined, UserOutlined } from "@ant-design/icons";
 import { Button, DatePicker, Form, Input } from "antd";
-
 export default function RegisterCard({
   getValuesFn,
 }: {

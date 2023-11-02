@@ -1,7 +1,21 @@
 import { IProductCardItem } from "@/types/components/ProductCard";
 import { Rate, Button } from "antd";
+import { useAddItemToBasketMutation } from "@/services/authApi";
+import { useSelector } from "react-redux";
+import store, { RootState } from "@/store";
+import { IProductBasket } from "@/types/components/ProductBasket";
 
-export default function ItemCard({ item }: { item: IProductCardItem }) {
+export default function ItemCard({
+  item,
+  addItemToBasket,
+}: {
+  item: IProductCardItem;
+  addItemToBasket: (item: IProductBasket) => void;
+}) {
+  const addItemAction = async () => {
+    let itemPrepareForAdd = { ...item, amount: 1 } as IProductBasket;
+    addItemToBasket(itemPrepareForAdd);
+  };
   return (
     <div className="product-card shadow-sm border border-gray-50 flex flex-col p-3 bg-white overflow-hidden">
       <div className="border-gray-100 rounded-sm overflow-hidden h-3/4 max-w-full">
@@ -22,7 +36,7 @@ export default function ItemCard({ item }: { item: IProductCardItem }) {
           size="large"
           shape="round"
           className="bg-blue-400 text-white"
-          // onClick="store.addItemToBasket(item)"
+          onClick={() => addItemAction()}
         >
           Sepete Ekle
         </Button>
